@@ -1,0 +1,312 @@
+<html>
+
+<head>
+    <!-- Bootstrap CDN links -->
+    <title>Instaweb</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Function to handle form submission
+            $("form").submit(function (event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                // Get the search input value
+                var searchTerm = $("input[type='search']").val().toLowerCase();
+
+                // Loop through all list items and show/hide based on the search term
+                $(".list-group-item2").each(function () {
+                    var text = $(this).text().toLowerCase();
+                    if (text.includes(searchTerm)) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Navbar with a search bar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #365486;">
+        <div class="container-fluid container">
+            <a class="navbar-brand" href="#" style="color: white;font-size: 30px;">Instaweb</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mt-1" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search"
+                        style="border: 2px solid #7FC7D9;">
+                    <button class="btn btn-outline-success" type="submit"
+                        style="border: 2px solid #7FC7D9; color: white;">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Main content with a list of popular hashtags and Instagram users -->
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                Most Popular Hashtags
+            </div>
+            <div class="card-body">
+                <div class="card-item list-group-item2">
+                    <h5>#love</h5>
+                    <p>2.1B posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#instagood</h5>
+                    <p>1.6B posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#fashion</h5>
+                    <p>1.1B posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#photooftheday</h5>
+                    <p>1B posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#photography</h5>
+                    <p>1B posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#art</h5>
+                    <p>1B posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#beautiful</h5>
+                    <p>816M posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#nature</h5>
+                    <p>771M posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#picoftheday</h5>
+                    <p>714M posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#happy</h5>
+                    <p>693M posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#follow</h5>
+                    <p>687M posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#travel</h5>
+                    <p>685 posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#cute</h5>
+                    <p>660 posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#style</h5>
+                    <p>634 posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#instadaily</h5>
+                    <p>627 posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#tbt</h5>
+                    <p>581M posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#followme</h5>
+                    <p>553M posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#summer</h5>
+                    <p>539M posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#beauty</h5>
+                    <p>522M posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#fitness</h5>
+                    <p>514M posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#like4like</h5>
+                    <p>514M posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#food</h5>
+                    <p>502 posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#instalike</h5>
+                    <p>493M posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#photo</h5>
+                    <p>482M posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#selfie</h5>
+                    <p>450M posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#friends</h5>
+                    <p>436M posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#music</h5>
+                    <p>434M posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#smile</h5>
+                    <p>432M posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#family</h5>
+                    <p>432M posts</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>#life</h5>
+                    <p>431M posts</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header"><i class="fab fa-instagram"></i>
+                Most Popular Instagram Accounts
+            </div>
+            <div class="card-body">
+                <div class="card-item list-group-item2">
+                    <h5>@instagram</h5>
+                    <p>667 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@cristiano</h5>
+                    <p>618 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@leomessi</h5>
+                    <p>498 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@selenagomez</h5>
+                    <p>429 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@kyliejenner</h5>
+                    <p>399 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@therock</h5>
+                    <p>396 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@arianagrande</h5>
+                    <p>380 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@kimkardashian</h5>
+                    <p>364 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@beyonce</h5>
+                    <p>319 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@khloekardashian</h5>
+                    <p>311 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@nike</h5>
+                    <p>306 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@kendalljenner</h5>
+                    <p>294 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@justinbieber</h5>
+                    <p>292 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@natgeo</h5>
+                    <p>283 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@taylorswift</h5>
+                    <p>279 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@virat.kohli</h5>
+                    <p>266 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@jlo</h5>
+                    <p>253 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@nickiminaj</h5>
+                    <p>229 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@kourtneykardash</h5>
+                    <p>224 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@neymarjr</h5>
+                    <p>218 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@mileycyrus</h5>
+                    <p>216 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@katyperry</h5>
+                    <p>206 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@zendaya</h5>
+                    <p>184 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@kevinhart4real</h5>
+                    <p>179 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@iamcardib</h5>
+                    <p>169 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@kingjames</h5>
+                    <p>159 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@ddlovato</h5>
+                    <p>157 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@badgalriri</h5>
+                    <p>152 million followers</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</html>
