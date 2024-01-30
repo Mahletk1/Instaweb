@@ -1,6 +1,8 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Bootstrap CDN links -->
     <title>Instaweb</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
@@ -34,7 +36,7 @@
 
 <body>
     <!-- Navbar with a search bar -->
-    <nav class="navbar navbar-expand-lg" style="background-color: #365486;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #365486;">
         <div class="container-fluid container">
             <a class="navbar-brand" href="#" style="color: white;font-size: 30px;">Instaweb</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -46,20 +48,34 @@
                 </ul>
                 <form class="d-flex">
                     <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search"
-                        style="border: 2px solid #7FC7D9;">
+                        style="border: 2px solid #f7d46e;">
                     <button class="btn btn-outline-success" type="submit"
-                        style="border: 2px solid #7FC7D9; color: white;">Search</button>
+                        style="border: 2px solid #f7d46e; color: white;">Search</button>
                 </form>
             </div>
         </div>
     </nav>
+    <div class="">
+        <div class="col-lg-12">
+            <div class="p-5"
+                style="background-image: url('./assets/images/Instagram.png'); background-size: cover; background-position: center; opacity: 0.8;">
+                <!-- add your image source here -->
+                <h1 class="display-4" style="color: white;">Welcome to Instaweb!</h1>
+                <p class="lead" style="color: wheat;">Explore the latest trends in hashtags and Instagram accounts.</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
     <!-- Main content with a list of popular hashtags and Instagram users -->
     <div class="container">
+        <div class="cardheader mt-5">
+            <i class="fa fa-hashtag" aria-hidden="true"></i>
+            Most Popular Hashtags
+        </div>
         <div class="card">
-            <div class="card-header">
-                <i class="fa fa-hashtag" aria-hidden="true"></i>
-                Most Popular Hashtags
-            </div>
+
             <div class="card-body">
                 <div class="card-item list-group-item2">
                     <h5>#love</h5>
@@ -183,18 +199,18 @@
                 </div>
             </div>
         </div>
+        <div class="cardheader"><i class="fab fa-instagram"></i>
+            Most Popular Instagram Accounts
+        </div>
         <div class="card">
-            <div class="card-header"><i class="fab fa-instagram"></i>
-                Most Popular Instagram Accounts
-            </div>
             <div class="card-body">
                 <div class="card-item list-group-item2">
                     <h5>@instagram</h5>
-                    <p>667 million followers</p>
+                    <p>668 million followers</p>
                 </div>
                 <div class="card-item list-group-item2">
                     <h5>@cristiano</h5>
-                    <p>618 million followers</p>
+                    <p>619 million followers</p>
                 </div>
                 <div class="card-item list-group-item2">
                     <h5>@leomessi</h5>
@@ -300,14 +316,24 @@
                     <h5>@badgalriri</h5>
                     <p>152 million followers</p>
                 </div>
-
+                <div class="card-item list-group-item2">
+                    <h5>@realmadrid</h5>
+                    <p>152 million followers</p>
+                </div>
+                <div class="card-item list-group-item2">
+                    <h5>@chrisbrownofficial</h5>
+                    <p>145 million followers</p>
+                </div>
             </div>
         </div>
     </div>
+    <footer class="footer mt-auto py-3 text-center" style="background-color: #212529; color: white; font-size: 20px;">
+        Follow Us
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
 </html>
