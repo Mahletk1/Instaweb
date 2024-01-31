@@ -31,7 +31,7 @@
             });
         });
     </script>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -61,11 +61,10 @@
                 style="background-image: url('./assets/images/Instagram.png'); background-size: cover; background-position: center; opacity: 0.8;">
                 <!-- add your image source here -->
                 <h1 class="display-4" style="color: white;">Welcome to Instaweb!</h1>
-                <p class="lead" style="color: wheat;">Explore the latest trends in hashtags and Instagram accounts.</p>
+                <p class="lead" style="color: wheat;">Explore the latest trends in <a href="https://www.instagram.com/"
+                        target="_blank">Instagram</a> hashtags and accounts.</p>
             </div>
         </div>
-    </div>
-
     </div>
 
     <!-- Main content with a list of popular hashtags and Instagram users -->
@@ -199,6 +198,16 @@
                 </div>
             </div>
         </div>
+        <a href="https://sproutsocial.com/insights/instagram-hashtags/" target="_blank">
+            <button class="btn mr-2 mb-5 mt-2" type=""
+                style="border: 2px solid #f7d46e; background-color: #e93939; color: white; border-radius: 5px;">Find
+                more
+                hashtags</button></a>
+        <a href="https://grum.co/instagram-hashtag-generator-free/" target="_blank">
+            <button class="btn mb-5 mt-2" type=""
+                style="border: 2px solid #f7d46e;background-color: #e93939; color: white; border-radius: 5px;">Generate
+                new
+                hashtaghs</button></a>
         <div class="cardheader"><i class="fab fa-instagram"></i>
             Most Popular Instagram Accounts
         </div>
@@ -326,13 +335,40 @@
                 </div>
             </div>
         </div>
+        <a href="https://en.wikipedia.org/wiki/List_of_most-followed_Instagram_accounts" target="_blank">
+            <button class="btn mr-2 mb-5 mt-2" type=""
+                style="border: 2px solid #f7d46e; background-color: #e93939; color: white; border-radius: 5px;">See more
+                accounts</button></a>
+        <a href="https://igsmmpanel.com/" target="_blank">
+            <button class="btn mb-5 mt-2" type=""
+                style="border: 2px solid #f7d46e;background-color: #e93939; color: white; border-radius: 5px;">Increase
+                your followers</button></a>
     </div>
+    <div class="text-center">
+        <button id="updateButton" class="btn btn-primary mb-5 mt-2"
+            style="border: 2px solid #f7d46e;background-color: #e93939; color: white; border-radius: 5px;"
+            onclick="updateClicked()">Click to update</button>
+    </div>
+
     <footer class="footer mt-auto py-3 text-center" style="background-color: #212529; color: white; font-size: 20px;">
         Follow Us
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function updateClicked() {
+            var button = document.getElementById('updateButton');
+            button.innerHTML = 'Update in progress. Check back in 10 minutes!';
+            button.disabled = true;
+
+            // Simulate update process (you can replace this with your actual update logic)
+            setTimeout(function () {
+                button.innerHTML = 'Click to update';
+                button.disabled = false;
+            }, 600000); // 10 minutes in milliseconds
+        }
+    </script>
 </body>
 
 

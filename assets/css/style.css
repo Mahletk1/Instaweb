@@ -18,7 +18,7 @@ body {
   /* background-color: #f7d46e; */
   color: #c3156a;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .card-body {
@@ -60,4 +60,18 @@ body {
   margin: 0;
   font-size: 12px;
   color: gray;
+}
+
+a:link {
+  text-decoration: none;
+  color: #3f37d8;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
 }
